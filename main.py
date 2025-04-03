@@ -21,7 +21,7 @@ def connect_db():
         connection = mysql.connector.connect(
             host="localhost",
             user="root",
-            password=""
+            password="Kalisa@53"  # Using your provided password
         )
         print("* Database connection successful!")
         return connection
@@ -136,7 +136,7 @@ def add_sample_hospitals(connection):
     
     if count == 0:
         hospitals = [
-            ("Central Maternity Hospital", "Central", "+123-456-7890", "24/7 Labor & Delivery, NICU, Prenatal Care"),
+            ("Central Maternity Hospital", "Kigali", "+123-456-7890", "24/7 Labor & Delivery, NICU, Prenatal Care"),
             ("Northern Women's Clinic", "North", "+123-456-7891", "Obstetrics, Gynecology, Prenatal Classes"),
             ("Eastern General Hospital", "East", "+123-456-7892", "Labor & Delivery, Family Planning, Ultrasound"),
             ("Southern Maternal Care Center", "South", "+123-456-7893", "High-Risk Pregnancy Care, NICU, Lactation Support"),
